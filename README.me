@@ -1,0 +1,27 @@
+# AI Blog Generator – Take-Home Project
+ 
+This is a simple Python + Flask app I built that takes a keyword, fetches some SEO data (mocked for now), and asks OpenAI to draft a full blog post with that keyword in mind.  
+It also automatically generates a fresh post every day for a default topic.
+
+---
+
+## What This App Can Do
+
+- Let you generate blog posts with just a keyword (via a simple `/generate` endpoint)
+- Add fake SEO data to give context to the post
+- Plug in affiliate links (as placeholders for now)
+- Automatically write a blog post once a day using a scheduler
+- Save everything nicely in a folder as Markdown files
+
+---
+
+## What’s Inside
+
+├── app.py # Main Flask app + daily scheduler
+├── ai_generator.py # Talks to OpenAI to get blog content
+├── seo_fetcher.py # Pretends to fetch SEO info
+├── utils.py # Helper for saving blog posts
+├── requirements.txt # All dependencies listed here
+├── .env # Template for environment variables
+├── README.md # This guide you're reading
+└── generated_posts/ # Where blog files get saved
